@@ -1,0 +1,88 @@
+.foryou-bgim{
+    background-image: url('../asset/luachon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    width: 100%;
+    background-attachment: fixed;
+    
+    &-container{
+        background-image: url('../asset/bgchild-foryou.png');
+        background-size: 100% 100%;
+        padding: 3.2% 0;
+        &_headding-flex{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding-top: 1em;
+            font-size: 30px;
+            margin-bottom: 0;
+            h3{
+                margin-bottom: 0;
+                padding: 0 5em;
+            }
+        }
+        &_title-flex{
+            justify-content: center;
+            font-style: italic;
+        }
+        &_content-flex{
+            &_2select{
+                text-align: center;
+                position: relative;
+                margin-top: 1em;
+                img{
+                    
+                }
+                p{
+                    position: absolute;
+                    top: 40%;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    margin: auto;
+                    font-weight: bold;
+                    font-size: 26px;
+                    width: 150px;
+                }
+                .top5{
+                    top: 42%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    .foryou-bgim{
+        height: 510px;
+        padding: 0 2em;
+        &-container{
+            &_headding-flex{
+                text-align: center;
+                h3{
+                    
+                }
+            }
+            &_title-flex{
+
+            }
+            &_content-flex{
+                &_2select{
+
+                    img{
+                        
+                    }
+                    p{
+
+                    }
+                    .top5{
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+

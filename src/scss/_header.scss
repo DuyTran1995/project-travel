@@ -1,0 +1,588 @@
+header{
+    height: 65%;
+    nav{
+        height: 100%;
+        background-image: url(../asset/nav.png);
+        background-attachment: fixed;
+        .hover-menu:after{
+            content: '';
+            margin: .2em 0;
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #ffffff;
+            transition: width .3s
+        }
+        .hover-menu:hover:after{
+            width: 100%;
+            transition: width .3s;
+        }
+        .topheader{
+            height: 165px;
+            background-color: rgba($color: #000000, $alpha: .7);
+            &-container{
+                &_content-flex{
+                    padding: 1em 0 0;
+                    .topheader-items{
+                        padding: 0 2em;
+                        margin: 0;
+                    }
+                    .rps576none{
+                        display: none;
+                    }
+                    .mynumber{
+                        a{
+                            margin: 0;
+                            text-decoration: none;
+                            font-size: 1.2em;
+                        }
+                    }
+                    .social{
+                        padding-right: 0;
+                        .fab{
+                            display: inline-block;
+                            text-align: center;
+                            font-size: 1.2em;
+                            margin: 0 0.5em;
+                        }
+                        
+                    }
+                    .logo{
+                        flex-grow: 1;
+                        position: relative;
+                        img{
+                            position: absolute;
+                            top: 100%;
+                            left: -20%;
+                            right: 0;
+                            bottom: 0;
+                            margin: auto;
+                            padding: 140px 25px 27px;
+                            background-color: rgba($color: #00ccff, $alpha: .2);
+                        }
+                    }
+                    .login{
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+                }
+                &_topmenu{
+                    position: relative;
+                    #toggle-menu{
+                        display: none;
+                    }
+                    .toggle-control{
+                        width: 50px;
+                        background-color: transparent;
+                        height: 50px;
+                        position: absolute;
+                        border-radius: .25rem;
+                        cursor: pointer;
+                        top: -25%;
+                    }
+                    .toggle-control>*{
+                        position: absolute;
+                        width: 30px;
+                        height: 5px;
+                        background-color: indianred;
+                        border-radius: .5rem;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
+                    }
+                    span:nth-child(2){
+                        top: 50%;
+                    }
+                    span:nth-child(3){
+                        top: -50%;
+                    }
+                    .main-menu{
+                        margin: 0;
+                        visibility: hidden;
+                        padding: 0;
+                        margin-left: 4em;
+                        margin-top: 8em;
+                        width: 30%;
+                        transform: translateX(-200px) scale(.5);
+                        transition: 1s;
+                        opacity: 0;
+                        li{
+                            list-style: none;
+                            &:nth-child(4){
+                                flex-grow: 1;
+                                text-align: center;
+                            }
+                            a{
+                                text-decoration: none;
+                                display: block;
+                                text-transform: uppercase;
+                                padding: 0.5em 0;
+                                margin: 0 1em;
+                            }
+                        }   
+                    }
+                    #toggle-menu:checked ~ .main-menu{
+                        visibility: visible;
+                        transform: translateX(-100px) scale(1);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+.bottomheader{
+    background-image: url(../asset/hinhnen.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 11.5em;
+    &:before{
+        position: absolute;
+        content: '';
+        border-color: rgba($color: #000000, $alpha: .8);
+        border-style: solid;
+        border-width: 50px 0 50px 0;
+        width: 100%;
+        padding-bottom: 19em;
+    }
+
+    &_services-container{
+        &_menu-flex{
+            justify-content: center;
+            text-align: center;
+            .main-menu{
+                padding: 0;
+                display: flex;
+                z-index: 1;
+                margin: 0;
+                li{
+                    list-style: none;
+                    text-align: center;
+                    position: relative;
+                    a{
+                        display: block;
+                        color: #ffffff;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        border: 3px solid #00ccff;
+                        border-bottom: none;
+                        padding: .3em 3em;
+                    }
+                    i{
+                        position: absolute;
+                        top: 35%;
+                        left: 11%;
+                        color: #00ccff;
+                        font-size: 1.4em;
+                    }
+                }
+            }
+        }
+        .title-services{
+            justify-content: center;
+            align-items: center;
+            margin-top: 1em;
+            h3{
+                margin: 0;
+                color: #00ccff;
+                top: 30%;
+                text-transform: uppercase;
+                font-size: 2em;
+                z-index: 1;
+            }
+        }
+        .services-input{
+            padding-top: 5em;
+            justify-content: space-between;
+            
+            input{
+                max-width: 23%;
+                width: 100px;
+                z-index: 1;
+                padding: .5em;
+            }
+        }   
+    }
+}
+
+
+
+
+@media screen and (min-width: 576px){
+    header{
+
+        nav{
+
+            .hover-menu:after{
+                content: '';
+
+            }
+            .hover-menu:hover:after{
+
+            }
+            .topheader{
+
+                &-container{
+                    &_content-flex{
+
+                        .topheader-items{
+
+                            
+                        }
+                        .mynumber{
+                            a{
+
+                            }
+                        }
+                        .social{
+
+                            .fab{
+
+                            }
+                            
+                        }
+                        .logo{
+
+                            img{
+
+                            }
+                        }
+                        .login{
+                            a{
+
+                            }
+                        }
+                    }
+                    &_topmenu{
+
+                        #toggle-menu{
+
+                        }
+                        .toggle-control{
+
+                        }
+                        .toggle-control>*{
+
+                        }
+                        span:nth-child(2){
+
+                        }
+                        span:nth-child(3){
+
+                        }
+                        .main-menu{
+
+                            li{
+
+                                &:nth-child(4){
+
+                                }
+                                a{
+
+                                }
+                            }   
+                        }
+                        #toggle-menu:checked ~ .main-menu{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottomheader{
+
+        &:before{
+        }
+    
+        &_services-container{
+            &_menu-flex{
+
+                .main-menu{
+
+                    li{
+
+                        a{
+                            
+                        }
+                        i{
+
+                        }
+                    }
+                }
+            }
+            .title-services{
+
+                h3{
+
+                }
+            }
+            .services-input{
+
+                
+                input{
+
+                }
+            }   
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    header{
+
+        nav{
+
+            .hover-menu:after{
+                content: '';
+
+            }
+            .hover-menu:hover:after{
+
+            }
+            .topheader{
+
+                &-container{
+                    &_content-flex{
+
+                        .topheader-items{
+
+                            
+                        }
+                        .mynumber{
+                            a{
+
+                            }
+                        }
+                        .social{
+
+                            .fab{
+
+                            }
+                            
+                        }
+                        .logo{
+
+                            img{
+
+                            }
+                        }
+                        .login{
+                            a{
+
+                            }
+                        }
+                    }
+                    &_topmenu{
+
+                        #toggle-menu{
+
+                        }
+                        .toggle-control{
+
+                        }
+                        .toggle-control>*{
+
+                        }
+                        span:nth-child(2){
+
+                        }
+                        span:nth-child(3){
+
+                        }
+                        .main-menu{
+
+                            li{
+
+                                &:nth-child(4){
+
+                                }
+                                a{
+
+                                }
+                            }   
+                        }
+                        #toggle-menu:checked ~ .main-menu{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottomheader{
+
+        &:before{
+        }
+    
+        &_services-container{
+            &_menu-flex{
+
+                .main-menu{
+
+                    li{
+
+                        a{
+                            padding: 14px 3em;
+                        }
+                        i{
+
+                        }
+                    }
+                }
+            }
+            .title-services{
+
+                h3{
+
+                }
+            }
+            .services-input{
+
+                
+                input{
+
+                }
+            }   
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width: 992px){
+    header{
+
+        nav{
+
+            .hover-menu:after{
+
+            }
+            .hover-menu:hover:after{
+
+            }
+            .topheader{
+               
+                &-container{
+                    &_content-flex{
+                  
+                        .topheader-items{
+                           
+                            
+                        }
+                        .rps576none{
+                            display: block;
+                        }
+                        .mynumber{
+                            a{
+                             
+                            }
+                        }
+                        .social{
+                          
+                            .fab{
+                              
+                            }
+                            
+                        }
+                        .logo{
+                           
+                            img{
+                              
+                            }
+                        }
+                        .login{
+                            a{
+                             
+                            }
+                        }
+                    }
+                    &_topmenu{
+                       display: flex;
+                       justify-content: space-around;
+                        #toggle-menu{
+                         
+                        }
+                        .toggle-control{
+                            display: none;
+                        }
+                        .toggle-control>*{
+                          
+                        }
+                        span:nth-child(2){
+                           
+                        }
+                        span:nth-child(3){
+                          
+                        }
+                        .main-menu{
+                           display: flex;
+                           visibility: visible;
+                           opacity: 1;
+                            transform: translateX(0px) scale(1);
+                           width: 100%;
+                           justify-content: space-around;
+                           text-align: center;
+                           margin: 3em 0;
+                           padding: 0;
+                            li{
+
+                                &:nth-child(4){
+
+                                }
+                                a{
+
+                                }
+                            }   
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottomheader{
+        &:before{
+        }
+    
+        &_services-container{
+            &_menu-flex{
+
+                
+                .main-menu{
+
+                    li{
+
+                        a{
+                            padding: 0.9em 3em;
+    
+                        }
+                        i{
+
+                        }
+                    }
+                }
+            }
+            .title-services{
+
+                h3{
+
+                }
+            }
+            .services-input{
+
+                
+                input{
+
+                }
+            }   
+        }
+    }
+}
+
+
+

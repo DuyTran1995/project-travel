@@ -1,0 +1,152 @@
+.selectme{
+    padding-top: 3em;
+    background-color: #ffffff;
+    margin-bottom: 3em;
+    &-container{
+        &_headding{
+            h3{
+                text-align: center;
+                font-size: 2em;
+                color: $blue;
+            }
+        }
+        &_title{ 
+            
+            p{
+                text-align: center;
+                font-size: 1em;
+                font-style: italic;
+                margin: 0;
+            }
+        }
+        &_content-flex{
+            margin-top: 3em;
+            &_card{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                margin-top: 3em;
+                img{
+                    width: 10%;
+                    align-self: center;
+                }
+                p{
+                    text-align: center;
+                    color: #000000;
+                }
+                h3{
+                    color: $blue;
+                }
+                .btn{
+                    width: 150px;
+                    padding: .5em 0;
+                    border: 1px solid #000;
+                    text-align: center;
+                    text-decoration: none;
+                    border: 1px solid $blue;
+                    color: #000000;
+                    font-weight: 500;
+                    box-shadow: 2px 2px 2px(rgba($color: $blue, $alpha: 1.0));
+                    position: absolute;
+                    top: 96%;
+                    visibility: hidden;
+                }
+                &:hover{
+                    box-shadow: 2px 2px 2px(rgba($color: $blue, $alpha: .5));
+                    transition: box-shadow .3s;
+                }
+                &:hover .btn{
+                    visibility: visible;
+                    transition: visibility .3s;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    .selectme{
+        &-container{
+            &_headding{
+                h3{
+
+                }
+            }
+            &_title{ 
+                
+                p{
+
+                }
+            }
+            &_content-flex{
+
+                &_card{
+
+                    img{
+
+                    }
+                    p{
+
+                    }
+                    h3{
+
+                    }
+                    .btn{
+
+                    }
+                    &:hover{
+
+                    }
+                    &:hover .btn{
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .selectme{
+        margin-bottom: 3em;
+        &-container{
+            &_headding{
+                h3{
+
+                }
+            }
+            &_title{ 
+                
+                p{
+
+                }
+            }
+            &_content-flex{
+
+                &_card{
+
+                    img{
+
+                    }
+                    p{
+
+                    }
+                    h3{
+
+                    }
+                    .btn{
+
+                    }
+                    &:hover{
+
+                    }
+                    &:hover .btn{
+
+                    }
+                }
+            }
+        }
+    }
+}

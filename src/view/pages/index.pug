@@ -1,0 +1,197 @@
+extends ../layouts/layout.pug
+block selectme
+    .selectme
+        .selectme-container.container
+            .selectme-container_headding
+                h3 TẠI SAO CHỌN CHÚNG TÔI
+            .selectme-container_title
+                p Quay về truyền thống, tin hoa dân tộc, chúng tôi
+                p đưa đến bạn những trải nghiệm chân thật nhất của văn hóa người Việt.
+            .selectme-container_content-flex.row
+                .selectme-container_content-flex_card.col-12.col-sm-12.col-md-12.col-lg-6.col-xl-3
+                    h3 10 NĂM KINH NGHIỆM
+                    img(src="../asset/10namkinhnghiem.png", alt="")
+                    p Kinh nghiệp của mình chúng tôi tự tin phục vụ quý khách
+                    p Thực hiện hơn 2536 tour
+                    p Nhận được ý kiến phản hồi tốt của các khách hàng trong chuyến 
+                    p Hơn 2031 nhà đồng hành cùng
+                    a.btn.btn-selectme-card(href="#") Xem Thêm
+                .selectme-container_content-flex_card.col-12.col-sm-12.col-md-12.col-lg-6.col-xl-3
+                    h3 CẬP NHẬT SỰ KIỆN
+                    img(src="../asset/sukien.png", alt="")
+                    p Cập nhật sự kiện mới nhanh nhất, rẻ nhất của năm.
+                    p Tặng kèm sản phẩm sự kiện.
+                    p Không tính thêm thuế hay dịch vụ ngoài các sự kiện chính. 
+                    p Hơn 10.3654 vé bán ra trong năm
+                    a.btn.btn-selectme-card(href="#") Xem Thêm
+                .selectme-container_content-flex_card.col-12.col-sm-12.col-md-12.col-lg-6.col-xl-3
+                    h3 THIẾT KẾ TOUR
+                    img(src="../asset/chudong.png", alt="")
+                    p Tạo hành trình riêng theo các của bạn và người thân.
+                    p Thoải mái chuyến đi xa.
+                    p Thủ tục gọn gàng đơn giản, không thu thuế thêm. 
+                    p Hơn 13.535 chuyến đi thực hiện.
+                    a.btn.btn-selectme-card(href="#") Xem Thêm
+                .selectme-container_content-flex_card.col-12.col-sm-12.col-md-12.col-lg-6.col-xl-3
+                    h3 TIẾT KIỆM TỐI ĐA
+                    img(src="../asset/tietkiem.png", alt="")
+                    p Tiết kiệm tối đa cho bạn và người thân.
+                    p Các hóa đơn không thêm phí.
+                    p KHông thu thuế thêmm có thể thanh toán nhỏ.
+                    p Hơn 13.535 chuyến đi thực hiện.
+                    a.btn.btn-selectme-card(href="#") Xem Thêm
+
+block foryou
+    .foryou-bgim
+        .foryou-bgim-container.container
+            .foryou-bgim-container_headding-flex.row 
+                h3.blue 2 SỰ LỰA CHỌN CHO BẠN
+            .foryou-bgim-container_title-flex.row 
+                P.white Chúng tôi có tour sẳn, hoặc bạn có thể thiết kế cho mình 1 tour theo ý của bạn
+            .foryou-bgim-container_content-flex.row
+                .foryou-bgim-container_content-flex_2select.col-12.col-sm-12.col-md-12.col-lg-6.col-xl-6
+                    img(src="../asset/hoatietforme.png", alt="")
+                    p.white.top5 TOUR
+                .foryou-bgim-container_content-flex_2select.col-12.col-sm-12.col-md-12.col-lg-6.col-xl-6
+                    img(src="../asset/hoatietforme.png", alt="")
+                    p.white THIẾT KẾ TOUR
+block scenery
+    .scenery-container.container
+        .scenery-container-flex.row
+            .scenery-container-flex_headding
+                h3.blue CẢNH SẮC MIỀN TRUNG 
+            .scenery-container-flex_title
+                p Chúng tôi giới thiệu đến quý khách hàng yêu dấu của mình các địa điểm du lịch đậm chất dân tộc Việt Nam
+                p Để có thêm cảm nhận rõ ràng hơn, mời bạn vào tham quan các địa điểm của TRUNGVIVU
+            .scenery-container-flex_card-flex.row
+                .card-scenery.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                    img(src="../asset/bg-danang.png", alt="")
+                    img.hover-img(src="../asset/danang.png", alt="")
+                .card-scenery.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                    img(src="../asset/bg-hoian.png", alt="")
+                    img.hover-img(src="../asset/hoian.png", alt="")
+                .card-scenery.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                    img(src="../asset/bg-hue.png", alt="")
+                    img.hover-img(src="../asset/hue.png", alt="")
+block achievement
+    .achievement-container.container
+        .achievement-container_headding
+            h3.blue thành tích 5 năm qua
+        .achievement-container_content
+            p Cảm ơn quý khách đã luôn đồng hành cũng TrungViVu để thực hiện những chuyến tour du lịch
+            p nhiều kỉ niệm và thành công. Chúng tôi sẽ luôn ở đây để phục vụ quý khách
+    .achievement-bgim
+        .achievement-bgim-container.container
+            .achievement-bgim-container_card-flex.row
+                .card-5year.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                    img(src="../asset/hoatiet-5year.png", alt="")
+                    p.count1.white 0
+                    p.footer-card.white SỐ TOUR ĐÃ THỰC HIỆN 
+                .card-5year.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                    img(src="../asset/hoatiet-5year.png", alt="")
+                    p.count2.white 0
+                    P.footer-card.white GIẢI THƯỞNG TOUR UY TÍNH CHẤT LƯỢNG
+                .card-5year.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                    img(src="../asset/hoatiet-5year.png", alt="")
+                    p.count3.white 0
+                    P.footer-card.white LƯỢT TRUY CẬP
+block event
+    .event
+        .event_title
+            h3 SỰ KIÊN LỚN 2017
+            P Chúng tôi xin gửi đến quý khách hàng những hoạt động có trong tour của mình. Để khách hàng có thể trải nghiệm
+            p những hoạt động nỗi tiếng của dân Việt, hay những hoạt động nổi tiếng ở thành phố của ta
+        .event-content_flex.row 
+            .event-card.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                img(src="../../dist/asset/event-duongchaysacmau.png", alt="")
+                .card-hover
+                    img(src="../../dist/asset/event-child.png", alt="") 
+                    h3.white
+                        span.blue Confession
+                        | Đà Nẵng
+                    p.white Với sự góp mặt của hơn 50 ca sĩ
+                    p.white 15 nhóm nhạc và 6 nhóm nhảy.
+                    p.white Bạn sẽ không thể bỏ qua lễ hội lớn nhất này, chắc chắn nó sẽ
+                    p.white mang lại cho bạn những đêm không thể quên
+            .event-card.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                img(src="../../dist/asset/event-danang.png", alt="")
+                .card-hover
+                    img(src="../../dist/asset/event-child.png", alt="") 
+                    h3.white
+                        span.blue Confession
+                        | Đà Nẵng
+                    p.white Với sự góp mặt của hơn 50 ca sĩ
+                    p.white 15 nhóm nhạc và 6 nhóm nhảy.
+                    p.white Bạn sẽ không thể bỏ qua lễ hội lớn nhất này, chắc chắn nó sẽ
+                    p.white mang lại cho bạn những đêm không thể quên
+            .event-card.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                img(src="../../dist/asset/event-phaohoa.png", alt="")
+                .card-hover
+                    img(src="../../dist/asset/event-child.png", alt="") 
+                    h3.white
+                        span.blue Confession
+                        | Đà Nẵng
+                    p.white Với sự góp mặt của hơn 50 ca sĩ
+                    p.white 15 nhóm nhạc và 6 nhóm nhảy.
+                    p.white Bạn sẽ không thể bỏ qua lễ hội lớn nhất này, chắc chắn nó sẽ
+                    p.white mang lại cho bạn những đêm không thể quên
+block footer
+    .footer
+        .footer-container.container
+            .logo-footer.col-12
+                img(src="../../dist/asset/logo.png", alt="")
+            .content-footer.row
+                .footer-card.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                    .info-footer
+                        p
+                            span.stress.blue
+                                <i class="fas fa-map-marker-alt"></i>
+                            span.white 0313 St. Stroman Wall Apt.508
+                            p.ml2em.white 304 Thành Thái, quận 10, TP HCM 
+                        p   
+                            span.phone.blue
+                                <i class="fas fa-phone"></i>
+                            span.white 0.0999655
+                        p
+                            span.website.blue
+                                <i class="fas fa-envelope"></i>
+                            span.white trungvivu.com
+                .footer-card.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                    a(href="#")
+                        p.white Thành Phố Đà Nẵng
+                    a(href="#")  
+                        p.white Thành Phố Huế
+                    a(href="#")
+                        p.white Thành Phố Hội An
+                .footer-card.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                    iframe(src="../../dist/asset/10000000_319949315386404_4462382810505674752_n.mp4", frameborder="300")
+                .footer-card-social.col-12
+                    a(href="#")
+                        <i class="fab fa-facebook-square"></i>
+                    a(href="#")
+                        <i class="fab fa-twitter-square"></i>
+                    a(href="#")
+                        <i class="fab fa-pinterest-square"></i>
+                    a(href="#")
+                        <i class="fab fa-google-plus-square"></i>
+        .client.col-12 
+            img(src="../../dist/asset/client-footer.png", alt="")
+
+
+
+                    
+
+                
+
+
+
+
+                    
+
+
+                    
+                
+
+            
+                
+                

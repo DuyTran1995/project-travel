@@ -1,0 +1,31 @@
+$blue : #00ccff;
+$white: #ffffff;
+
+$color: () !default;
+$color: map-merge((
+    "blue": $blue,
+    "white": $white,
+    ), $color  );
+
+@each $color-name, $color in $color{
+    .#{$color-name}{
+        color: $color;
+    }
+}
+
+$left: left;
+$center: center;
+$right: right;
+
+$algin: () !default;
+$algin: map-merge((
+    "left": $left,
+    "center": $center,
+    "right": $right,
+) , $algin );
+
+@each $text-algin, $algin in $algin{
+    .#{$text-algin}{
+        text-align: $algin;
+    }
+}

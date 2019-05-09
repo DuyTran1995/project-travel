@@ -1,0 +1,47 @@
+.scenery-container-flex{
+    flex-direction: column;
+    align-items: center;
+    &_headding{
+        h3{
+            font-weight: bold;
+            font-size: 30px;
+        }
+    }
+    &_title{
+        text-align: center;
+        p{
+            font-style: italic;
+        }
+    }
+    &_card-flex{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        .card-scenery{
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .hover-img{
+                width: 50%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                visibility: hidden;
+                transform: translateX(-100px) rotate3d(0, 1, 0, 180deg);
+                opacity: 0;
+                transition: all 1s;
+            }
+            &:hover .hover-img{
+                visibility: visible;
+                transform: translateX(0px) rotate3d(0, 1, 0, 360deg);
+                opacity: 1;
+            }   
+        }
+    }
+}
+        
+    

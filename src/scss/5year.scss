@@ -1,0 +1,47 @@
+.achievement-container{
+    &_headding{
+        text-align: center;
+        h3{
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+    }
+    &_content{
+        text-align: center;
+        p{
+            font-style: italic;
+        }
+    }
+}
+.achievement-bgim{
+    background-image: url('../asset/thanhtich5nam.png');
+    height: 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    &-container{
+        &_card-flex{
+            text-align: center;
+            .card-5year{
+                position: relative;
+                padding: 2em;
+                p{
+                    position: absolute;
+                    top: 30%;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    font-size: 3em;
+                }
+                .footer-card{
+                    top: 85%;
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
